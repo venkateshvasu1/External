@@ -1,11 +1,12 @@
-
-<div class="d-flex flex-column bd-highlight mb-3">
+<div class="d-flex flex-column bd-highlight mb-2">
   {{#events}}
-       <div class="p-2 bd-highlight"> 
-        <h2 style="color:black;">{{ title }}</h2> </div>
-          <div class="p-2 bd-highlight">
-        <p style="color:black;">{{ description }}</p> </div>
-          <div class="p-2 bd-highlight">
-        <p style="color:black;">{{ location }}</p> </div>
+       <div style="color:black; width:50%; margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: black; border-style:solid;" class="p-2 bd-highlight"> 
+        <div> <h2>{{ title }}</h2> </div>
+          <div style="margin-left: 2.5em;padding: 0 7em 2em 0;" class="p-2 bd-highlight">
+       {{ description }} </div>
+          <div style="margin-left: 2.5em;padding: 0 7em 2em 0;" class="p-2 bd-highlight">
+        {{ location }} </div> 
+        </div>
+
   {{/events}}
 </div>

@@ -15,6 +15,16 @@
          background-repeat: no-repeat;
          background-size: cover;
          background-attachment: fixed;  }
+
+          .tab { 
+              display: inline-block; 
+            margin-left: 47.5px; 
+        } 
+          .tab1 { 
+              display: inline-block; 
+            margin-left: 18px; 
+        } 
+
       </style>
   <meta charset="utf-8" />
 
@@ -34,37 +44,37 @@
 
 <div>
 
-    <h1 style="color:black;text-align:center;">Welcome to Cloud Techies application</h1> 
+    <h1 style="color:#A569BD ;text-align:center;">Welcome to Cloud Techies Training application</h1> 
 
-    <h2 style="color:Cyan;">This is an Event hosting application created by </h2>
+    <!-- <h2 style="color:Cyan;">This is an Event hosting application created by </h2>
 
     <ul style="color:Cyan;"> <li> Nitish </li> 
 
     <li> Venkatesh </li>
 
-    <li> Rishav </li> </ul> 
+    <li> Rishav </li> </ul>  -->
 
  
 {{{body}}}
-
+ <div style="margin-left: 2.5em">
   <h2 style="color:black;">Add an event</h2>
 
-    <form style="color:black;" action="/event" method="post">
-
-       title: <input style="color:black;" name="title" type="text" /> <br />
-
-       description: <input style="color:black;" name="description" type="text" /> <br />
-
-       location: <input style="color:black;" name="location" type="text" /> <br />
-
-       <b>Like</b>: <button type ="button" onclick="alert('Like / Unlike')" > LIKE! </button> </br>
-       
+    <form style="color:black;" action="/event" method="post" >
+     
+       Title: <span class="tab"></span> <input style="color:black;" name="title" type="text" /> <br />
+    
+    
+       Description: <input style="color:black;" name="description" type="text" /> <br />
+    
+    
+       Location: <span class="tab1"></span> <input style="color:black;" name="location" type="text" /> <br />
+  
        <br />
 
         <input type="submit" name="submit" value="submit" />
 
     </form>
-
+</div>
   </div>
 
 </body>
