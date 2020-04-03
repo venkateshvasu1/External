@@ -1,11 +1,15 @@
 <div class="d-flex flex-column bd-highlight mb-2">
   {{#events}}
-       <div style="color:black; width:50%; margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: black; border-style:solid;" class="p-2 bd-highlight"> 
+       <div style="color:black; width:32%; margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: #3498DB; border-style:solid;" class="p-2 bd-highlight"> 
         <div> <h2>{{ title }}</h2> </div>
           <div style="margin-left: 2.5em;padding: 0 7em 2em 0;" class="p-2 bd-highlight">
        {{ description }} </div>
           <div style="margin-left: 2.5em;padding: 0 7em 2em 0;" class="p-2 bd-highlight">
         {{ location }} </div> 
+<div>
+<span class="likebtn-wrapper" data-ef_voting="push" data-white_label="true" data-identifier="item_1" data-counter_zero_show="true"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+    </div>
         </div>
 
   {{/events}}
